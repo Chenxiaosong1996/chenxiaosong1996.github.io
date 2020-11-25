@@ -1,13 +1,14 @@
 # Site settings
 title: BY Blog
-SEOTitle: 柏荧的博客 | BY Blog
+SEOTitle: 小松的博客 | BY Blog
 header-img: img/post-bg-desk.jpg
-email: qiubaiying@gmail.com
+author: Schindler<陈小松>
+email: shinler2018@gmail.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
-url: "http://qiubaiying.github.io"          # your host, for absolute URL
+keyword: "BY, BY Blog, 小松的博客, chenxiaosong, 陈小松, HTML, CSS, JavaScript, Vue.js, Angular 2+, Bootstrap, Vant, Element UI"
+url: "https://chenxiaosong1996.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/Chenxiaosong1996/chenxiaosong1996.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -18,12 +19,13 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-facebook_username:  baiying.qiu.7
+# weibo_username:     chenxiaosong
+zhihu_username:     chenxiaosong
+github_username:    chenxiaosong
+# facebook_username:  baiying.qiu.7
 jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+twitter_username:   chenxiaosong
+csdn_username:      weixin_42136785
 
 
 
@@ -62,11 +64,12 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  clientID: 81396817577dcb1de44c                            #生成的clientID
+  clientSecret: 55b2d06cb1f055586403eb218fbd40c8479067d8    #生成的clientSecret
+  applicationName: Chenxiaosong1996
+  repo: chenxiaosong1996.github.io    #仓库名称
+  owner: chenxiaosong1996    #github用户名
+  admin: chenxiaosong1996
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
