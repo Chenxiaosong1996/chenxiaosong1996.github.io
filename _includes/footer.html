@@ -194,20 +194,27 @@
 
 
 <!-- Google Analytics -->
-{% if site.ga_track_id %}
+{% if site.ga_tag_id %}
 <script>
     // dynamic User by Hux
-    var _gaId = '{{ site.ga_track_id }}';
-    var _gaDomain = '{{ site.ga_domain }}';
-
-    // Originial
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
+    var _gtagId = '{{ site.ga_tag_id }}';
+    var _gtagSrc = 'https://www.googletagmanager.com/gtag/js?id=';
+    var gtagConfig = new Object({
+        cookie_expires: 30*24*60*60,
+        cookie_domain: window.location.origin,
+        cookie_update: false,
+        allow_ad_personalization_signals: false
+    });
+    var oHead = document.getElementsByTagName('HEAD')[0];
+    var myScript = document.createElement('script');
+    myScript.type = 'text/javascript';
+    myScript.src = _gtagSrc + _gtagId;
+    myScript.async = true;
+    oHead.appendChild(myScript);
+    window.dataLayer = window.dataLayer||[];
+    function gtag() { dataLayer.push(arguments) }
+    gtag('js', new Date());
+    gtag('config', _gtagId, gtagConfig);
 </script>
 {% endif %}
 
